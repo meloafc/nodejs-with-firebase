@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/meloafc/nodejs-with-firebase/issues"
   },
-  "homepage": "https://github.com/meloafc/nodejs-with-firebase#readme"
+  "homepage": "https://github.com/meloafc/nodejs-with-firebase#readme",
+  "dependencies": {
+    "firebase-admin": "^4.0.5"
+  }
 }
