@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-with-firebase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meloafc/nodejs-with-firebase.git"
+  },
+  "author": "Alex Fabiano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meloafc/nodejs-with-firebase/issues"
+  },
+  "homepage": "https://github.com/meloafc/nodejs-with-firebase#readme"
+}
