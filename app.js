@@ -6,3 +6,10 @@ admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: databaseURL
 });
+
+admin.database.enableLogging(true);
+
+var sessionsRef = admin.database().ref("sessions");
+sessionsRef.push({
+  startedAt: admin.database.ServerValue.TIMESTAMP
+});
