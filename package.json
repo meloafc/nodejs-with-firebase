@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/meloafc/nodejs-with-firebase#readme",
   "dependencies": {
-    "firebase": "^4.1.2"
+    "firebase": "^4.1.2",
+    "moment": "^2.18.1"
   }
 }
