@@ -1,6 +1,5 @@
 # Firebase config
-config/firebase/serviceAccountCredentials.json
-config/firebase/config.json
+config/firebaseConfig.json
 
 # Logs
 logs

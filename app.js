@@ -1,15 +1,11 @@
-var admin = require("firebase-admin");
-var serviceAccount = require("./config/firebase/serviceAccountCredentials.json");
-var databaseURL = require("./config/firebase/config.json").databaseURL;
+var firebase = require("firebase");
+var firebaseConfig = require("./config/firebaseConfig.json").config;
 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-  databaseURL: databaseURL
-});
+firebase.initializeApp(firebaseConfig);
 
-admin.database.enableLogging(true);
+firebase.database.enableLogging(true);
 
-var sessionsRef = admin.database().ref("sessions");
+var sessionsRef = firebase.database().ref("sessions");
 sessionsRef.push({
-  startedAt: admin.database.ServerValue.TIMESTAMP
+  startedAt: firebase.database.ServerValue.TIMESTAMP
 });
