@@ -7,7 +7,7 @@ const db = firebase.database();
 
 //ativarLog(firebase);
 //quantidadeDeEventos();
-lerEvento("01/06/2017","13/06/2017");
+//lerEvento("13/06/2017","14/06/2017");
 
 
 function lerEvento(inicio, fim) {
@@ -64,3 +64,9 @@ function formatarMilisegundos(duration) {
 
   return hours + ":" + minutes + ":" + seconds + "." + milliseconds;
 }
+
+module.exports = {
+  quantidadeDeEventos,
+  lerEvento
+}
+require('make-runnable');
